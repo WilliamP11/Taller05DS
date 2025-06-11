@@ -8,6 +8,8 @@ public class Usuario {
     protected String apellido;
     protected ArrayList<Incidente> incidentes;
 
+    
+
     public boolean login() {
         return true;
     }
