@@ -4,11 +4,13 @@ import java.util.ArrayList;
 
 public class PersonalAcademico extends Usuario {
 
+    public PersonalAcademico(String usuario, String contraseña, String nombre, String apellido,
+            ArrayList<Incidente> incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
+    }
+
     protected ArrayList<Incidente> incidentes;
 
-    public PersonalAcademico(ArrayList<Incidente> incidentes) {
-        this.incidentes = incidentes;
-    }
 
     public void reportarError(String email, String contenido) {
     }

@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Profesor extends PersonalAcademico {
-    public Profesor(ArrayList<Incidente> incidentes) {
-        super(incidentes);
+
+
+    public Profesor(String usuario, String contraseña, String nombre, String apellido,
+            ArrayList<Incidente> incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
     }
 
     private List<Curso> cursosACargo;

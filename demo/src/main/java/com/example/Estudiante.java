@@ -1,17 +1,17 @@
 package com.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Estudiante  extends PersonalAcademico {
+
+    public Estudiante(String usuario, String contraseña, String nombre, String apellido,
+            ArrayList<Incidente> incidentes) {
+        super(usuario, contraseña, nombre, apellido, incidentes);
+    }
     private List<Curso> estudiantesInscritos;
     private List<Curso> estudiantesEnEsperaDeInscripcion;
 
-    
-
-    public Estudiante(List<Curso> estudiantesInscritos, List<Curso> estudiantesEnEsperaDeInscripcion) {
-        this.estudiantesInscritos = estudiantesInscritos;
-        this.estudiantesEnEsperaDeInscripcion = estudiantesEnEsperaDeInscripcion;
-    }
 
     
     public List<Curso> getEstudiantesInscritos() {
